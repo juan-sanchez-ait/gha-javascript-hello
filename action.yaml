@@ -1,0 +1,14 @@
+name: Custom javascript action
+description: 'Greeting action'
+inputs:
+  name:
+    required: false
+    type: string
+    default: Stranger
+    description: "The name to be used to greet you"
+outputs:
+  greeting:
+    description: We say hi, using your name
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
